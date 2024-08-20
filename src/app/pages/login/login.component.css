@@ -1,0 +1,17 @@
+.loginForm {
+  padding: 25px 25px 30px 25px;
+  background: #163324;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  text-align: left;
+  opacity: 0.9;
+  box-shadow: 0px 0px 6px 1px #939393;
+}
+
+.submitButtonStyle {
+  width: 5rem;
+  background-color: #4aaf51;
+  color: white;
+  border-color: #4aaf51;
+}
