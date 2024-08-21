@@ -10,6 +10,6 @@ import { UserService } from '../../services/user.service';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
-  userService = inject(UserService);
-  router = inject(Router);
+  // userService = inject(UserService);
+  // router = inject(Router);
 }
