@@ -14,13 +14,13 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class LoginComponent {
   userService = inject(UserService);
-  router = inject(Router);
+  // router = inject(Router);
 
   onSubmit(data: NgForm) {
     this.userService.logInHandler(data).subscribe(
       (response: any) => {
         console.log('Login successful', response);
-        this.router.navigate(['/signup']);
+        // this.router.navigate(['/home']);
       },
       (error: any) => {
         console.error('Login failed', error);
