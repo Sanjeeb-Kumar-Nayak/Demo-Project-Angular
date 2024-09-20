@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
-import { UserService } from '../../services/user.service';
-import { NgForm, FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterLink, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { NgForm, FormsModule } from '@angular/forms';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink, FormsModule, HttpClientModule],
+  imports: [CommonModule, RouterLink, FormsModule, HttpClientModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
   providers: [UserService],
